@@ -1,7 +1,21 @@
 <!DOCTYPE html>
 <html>
 	<head>	
-		<title>Para fazer</title>
+		<title>Para fazer!</title>
+		<script>
+			function todoList() {
+			// armazenar os valores do usuario
+			var item= document.getElementById('todoInput').value
+			// criar um text node do input do usuario
+			var text= document.createTextNode(item)
+			// cria a li
+			var newItem= document.createElement('li')
+			// adiciona o input do usuario na tag li
+			newItem.appendChild(text)
+			// adota a tag li para o todolist
+			document.getElementById('todoList').appendChild(newItem) 
+			}
+		</script>
 	</head>
 	<body>
 		<center>
@@ -12,7 +26,5 @@
 		</form>
 
 		<ul id="todoList"></ul>
-
-		<script src="js/main.js"></script>
 	</body>
 </html>
